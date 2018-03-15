@@ -1,0 +1,38 @@
+input.ng-invalid{
+  border: solid 1px #ff0000;
+}
+
+input.ng-valid{
+  border: solid 1px #00ff00;
+}
+
+
+.star {
+      position: relative;
+      display: inline-block;
+      font-size: 3rem;
+      color: #d3d3d3;
+    }
+    .full {
+      color: red;
+    }
+    .half {
+      position: absolute;
+      display: inline-block;
+      overflow: hidden;
+      color: red;
+    }
+
+
+body
+{
+position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    background-image: url('/assets/backgroundmain2.jpg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+ background-size: cover;
+}

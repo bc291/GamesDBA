@@ -1,0 +1,85 @@
+<body>
+
+<div class="demo-grid-list">
+  <mat-card>
+    <mat-card-content>
+      <mat-grid-list cols="3" rowHeight="200px">
+        <ng-container *ngFor="let statistics of statistics2">
+        <mat-grid-tile class="tile1">
+       <div class="text-inside-grid">{{statistics.totalHoursPlayed}}</div>
+          <img [alt]="test" src="assets/tile1.jpeg">
+          <mat-grid-tile-footer>
+            <h3 mat-line>Total hours played</h3>
+            <span mat-line>{{statistics.totalHoursPlayed}} h</span>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid">{{statistics.totalGames}}</div>
+            <img [alt]="test" src="assets/tile2.jpeg">
+          <mat-grid-tile-footer>
+            <h3 mat-line>Total games: </h3>
+            <span mat-line>{{statistics.totalGames}}</span>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid">{{statistics.averagePercentage}} %</div>
+            <img [alt]="test" src="assets/tile3.jpeg">
+          <mat-grid-tile-footer>
+            <h3 mat-line>Average completion:</h3>
+            <span mat-line>{{statistics.averagePercentage}} %</span>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid2">{{statistics.mostTimeSpend}}</div>
+            <img [alt]="test" src="assets/tile4.jpg">
+          <mat-grid-tile-footer>
+            <h3 mat-line>Most time spend on:</h3>
+            <span mat-line>{{statistics.mostTimeSpend}}</span>
+          </mat-grid-tile-footer>
+        </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid2">{{statistics.highestRated}}</div>
+            <img [alt]="test" src="assets/tile5.jpg">
+            <mat-grid-tile-footer>
+              <h3 mat-line>Highest rated:</h3>
+              <span mat-line>{{statistics.highestRated}}</span>
+            </mat-grid-tile-footer>
+          </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid2">{{statistics.lowestRated}}</div>
+            <img [alt]="test" src="assets/tile6.jpg">
+            <mat-grid-tile-footer>
+              <h3 mat-line>Lowest rated:</h3>
+              <span mat-line>{{statistics.lowestRated}}</span>
+            </mat-grid-tile-footer>
+          </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid">{{statistics.getPcGames}}</div>
+            <img [alt]="test" src="assets/tile7.jpg">
+            <mat-grid-tile-footer>
+              <h3 mat-line>PC games:</h3>
+              <span mat-line>{{statistics.getPcGames}}</span>
+            </mat-grid-tile-footer>
+          </mat-grid-tile>
+
+          <mat-grid-tile class="tile1">
+            <div class="text-inside-grid2">{{statistics.favouriteGames}}</div>
+            <img [alt]="test" src="assets/tile7.jpg">
+            <mat-grid-tile-footer>
+              <h3 mat-line>Favourite games:</h3>
+              <span mat-line>{{statistics.favouriteGames}}</span>
+            </mat-grid-tile-footer>
+          </mat-grid-tile>
+        </ng-container>
+      </mat-grid-list>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+</body>

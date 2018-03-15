@@ -1,0 +1,29 @@
+a{
+  font-size: 16px;
+}
+
+.navbar-custom {
+    color: cyan!important;
+    background-color: #3E464C!important;
+}
+
+
+.color-text-navbar
+{
+color:white;
+}
+
+
+.navbar-brand
+{
+color: #81C784 !important;
+}
+
+
+
+.navbar-nav li a:hover, .navbar-nav > .active > a {
+  color: #fff !important;
+
+  background-color:#81C784 !important;
+}
+

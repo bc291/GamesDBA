@@ -1,0 +1,40 @@
+<body>
+
+<br><br><br><br>
+<div class="container">
+  <input (keyup.enter)="submitMyForm()" id="str" [(ngModel)]="str" placeholder="Type game title/platf"/>
+  <button class="btn btn-primary" (click)="submitMyForm()">Search</button>
+
+  <div [innerHTML]="theHtmlString"></div>
+  <table class="table table-striped">
+    <thead>
+    <th>Title</th>
+    <th>Creator</th>
+    <th>Rating</th>
+    <th>Genre</th>
+    <th>Game platform</th>
+    <th>Cover image</th>
+<th>Operations</th>
+    </thead>
+
+    <tbody>
+    <tr>
+    <tr class="custom_centered" *ngFor="let user of users ">
+      <td>{{user.title}}</td>
+      <td>{{user.creator}}</td>
+      <td>{{user.rating}}</td>
+      <td>{{user.genre}}</td>
+      <td>{{user.gamePlatform}}</td>
+      <td><img id="gameImg" src="{{user.imageUrl}}"></td>
+
+
+      <td><button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+        <button class="btn btn-primary" (click)="updateUser(user)">Details</button> </td>
+    </tr>
+    </tbody>
+
+
+  </table>
+
+</div>
+</body>

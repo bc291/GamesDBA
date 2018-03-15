@@ -1,0 +1,26 @@
+#gameImg{
+width:62px;
+height:90px;
+}
+
+.table-striped{
+  font-size: 15px;
+}
+
+
+
+
+body
+{
+position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+ //   background-image: url('/assets/backgroundmain2.jpg')!important;
+ background-color:black;
+    background-position: center;
+    background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 50px;
+}

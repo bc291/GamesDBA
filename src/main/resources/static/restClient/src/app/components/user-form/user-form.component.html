@@ -1,0 +1,63 @@
+<body>
+<div class="container">
+<br><br><br><br>
+
+  <form (ngSubmit)="processForm()">
+
+
+    <div class="form group">
+      <label for="title">Title</label>
+      <input [attr.disabled]="true" type="text" name="title" class="form-control" [(ngModel)]="user.title">
+    </div>
+
+    <div class="form group">
+      <label for="creator">Creator</label>
+      <input [attr.disabled]="true" type="text" name="creator" class="form-control" [(ngModel)]="user.creator">
+    </div>
+
+    <div class="form group">
+      <label for="rating">Rating</label>
+      <input [attr.disabled]="true" type="text" name="rating" class="form-control" [(ngModel)]="user.rating">
+    </div>
+
+    <div class="form group">
+      <label for="genre">Genre</label>
+      <input [attr.disabled]="true" type="text" name="genre" class="form-control" [(ngModel)]="user.genre">
+    </div>
+
+    <div class="form group">
+      <label for="gamePlatform">Platform</label>
+      <input [attr.disabled]="true" type="text" name="gamePlatform" class="form-control" [(ngModel)]="user.gamePlatform">
+    </div>
+
+    <div class="form group">
+    <label for="hoursPlayed">Hours played</label>
+    <input type="text" name="hoursPlayed" class="form-control" [(ngModel)]="user.hoursPlayed">
+</div>
+
+    <div class="form group">
+      <label for="percentageCompleted">Completion (%)</label>
+      <input type="text" id="percentageCompleted" name="percentageCompleted" class="form-control" [(ngModel)]="user.percentageCompleted" (ngModelChange)="textVerification(user.percentageCompleted)" [style.border]="refreshStyle()">
+    </div>
+
+
+    <div class="form group">
+      <label for="playersRating">Your rating (1-5)</label>
+      <input type="text" id="playersRating" name="playersRating" class="form-control" [(ngModel)]="user.playersRating" (ngModelChange)="ratingVerification(user.playersRating)" [style.border]="refreshStyleRating()">
+    </div>
+
+
+  <ng-template #t let-fill="fill">
+    <span *ngIf="fill === 100" class="star full">&hearts;</span>
+    <span *ngIf="fill === 0" class="star">&hearts;</span>
+    <span *ngIf="fill < 100 && fill > 0" class="star">
+    <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+  </span>
+  </ng-template>
+
+  <ngb-rating [(rate)]="user.playersRating" [starTemplate]="t" [readonly]="false" max="5"></ngb-rating><br><hr>
+    <input type="submit" value="save" class="btn btn-success">
+  </form>
+
+</div>
+</body>

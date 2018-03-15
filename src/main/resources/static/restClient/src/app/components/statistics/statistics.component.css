@@ -1,0 +1,99 @@
+canvas{
+
+  width:1100px !important;
+  height:250px !important;
+
+}
+
+canvas#myChart {
+    image-rendering: optimizeSpeed;             /* Older versions of FF */
+    image-rendering: -moz-crisp-edges;          /* FF 6.0+ */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non standard naming) */
+    image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+    image-rendering: crisp-edges;               /* Possible future browsers. */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non standard naming) */
+}
+
+
+.table{
+  font-size: 15px;
+}
+
+body
+{
+position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+  background-color: white;
+ background-size: cover;
+  padding-top: 90px;
+}
+
+
+mat-card {
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+}
+
+
+.demo-grid-list {
+  width: 1100px;
+
+  margin-left: 30%;
+  margin-right: 30%
+
+  .mat-card {
+    margin: 16px 0;
+  }
+
+  p {
+    margin: 16px;
+      font-family: Lato;
+  }
+
+  .demo-basic-list .mat-grid-tile {
+    background: rgba(0, 0, 0, 0.32);
+  }
+
+  img {
+    width: 350px;
+  }
+}
+
+.tile1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-inside-grid {
+  position: absolute;
+  left: 125px;
+ color: white;
+  font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+    font-weight: 600;
+   line-height: 80px;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+ letter-spacing: 0.05em;
+text-shadow: 0px 0px 3px #000;
+}
+
+.text-inside-grid2 {
+  position: absolute;
+  left: 0px;
+ color: white;
+  font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+    font-weight: 600;
+   line-height: 50px;
+    margin: 0 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+ letter-spacing: 0.05em;
+
+text-shadow: 0px 0px 3px #000;
+}

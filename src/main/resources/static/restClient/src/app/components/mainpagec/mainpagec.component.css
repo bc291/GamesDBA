@@ -1,0 +1,54 @@
+body
+{
+position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+    background-image: url('/assets/backgroundmain3.jpeg')!important;
+    background-position: center;
+    background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.centertext{
+ height: 75%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.text1
+{
+  font-size: 55px;
+  color: #81C784;
+}
+
+.text2
+{
+  font-size: 40px;
+  color: #81C784;
+}
+
+
+
+.centertext2{
+ height: 90%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.centerbutton{
+ height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
